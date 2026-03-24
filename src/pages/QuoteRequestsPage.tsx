@@ -5,12 +5,6 @@ import SearchInput from '../components/ui/search-input'
 import Badge, { getFuelBadgeVariant } from '../components/ui/badge'
 import { quoteRequests } from '../data/quote-requests'
 
-function getPriorityVariant(priority: string) {
-  if (priority === 'High') return 'error'
-  if (priority === 'Medium') return 'warning'
-  return 'default'
-}
-
 export default function QuoteRequestsPage() {
   const [search, setSearch] = useState('')
 
